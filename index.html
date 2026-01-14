@@ -1,116 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing Card</title>
-  <style>
-    :root{
-      --border:#e6e6e6;
-      --text:#111;
-      --muted:#6b6b6b;
-      --btn:#1f252a;
-      --bg:#ffffff;
-    }
-
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      min-height:100vh;
-      display:grid;
-      place-items:center;
-      background:#fff;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color:var(--text);
-    }
-
-    .card{
-      width:320px;
-      background:var(--bg);
-      border:1px solid var(--border);
-      border-radius:10px;
-      overflow:hidden;
-      box-shadow:0 10px 25px rgba(0,0,0,.06);
-    }
-
-    .card__header{
-      padding:14px 18px;
-      text-align:center;
-      font-weight:600;
-      border-bottom:1px solid var(--border);
-      color:#222;
-    }
-
-    .card__body{
-      padding:22px 22px 18px;
-      text-align:center;
-    }
-
-    .price{
-      display:flex;
-      align-items:flex-end;
-      justify-content:center;
-      gap:4px;
-      margin-top:6px;
-      margin-bottom:12px;
-    }
-
-    .price__amount{
-      font-size:44px;
-      font-weight:800;
-      letter-spacing:-0.02em;
-      line-height:1;
-    }
-
-    .price__period{
-      font-size:18px;
-      font-weight:600;
-      color:var(--muted);
-      padding-bottom:6px;
-    }
-
-    .features{
-      list-style:none;
-      padding:0;
-      margin:10px 0 18px;
-      color:#222;
-      font-size:14px;
-      line-height:1.6;
-    }
-
-    .btn{
-      width:100%;
-      border:0;
-      padding:14px 16px;
-      border-radius:10px;
-      background:var(--btn);
-      color:#fff;
-      font-weight:700;
-      cursor:pointer;
-      box-shadow:0 8px 16px rgba(0,0,0,.10);
-    }
-    .btn:hover{ filter:brightness(1.05); }
-    .btn:active{ transform:translateY(1px); }
-  </style>
+  <meta charset="UTF-8">
+  <title>Labrador</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card" role="region" aria-label="Előfizetési kártya">
-    <div class="card__header">Labrador</div>
 
-    <div class="card__body">
-      <div class="price" aria-label="Ár">
-        <div class="price__amount">$15</div>
-        <div class="price__period">/mo</div>
-      </div>
+<div class="card">
+  <h2>Labrador</h2>
 
-      <ul class="features">
-        <li>Unlimited Matches</li>
-        <li>Unlimited Messages</li>
-        <li>Unlimited App Usage</li>
-      </ul>
+  <p class="price">
+    <strong>$15</strong><span>/mo</span>
+  </p>
 
-      <button class="btn" type="button">Get started</button>
-    </div>
-  </div>
+  <p>Unlimited Matches</p>
+  <p>Unlimited Messages</p>
+  <p>Unlimited App Usage</p>
+
+  <button>Get started</button>
+</div>
+
 </body>
 </html>
